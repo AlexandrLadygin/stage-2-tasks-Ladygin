@@ -41,11 +41,8 @@ public class University {
                 }
             }
         }
-
         return marksSum/marksCount;
     }
-
-
 
     public double getAverageByStudentId(int studentId) throws InvalidMarkException, InvalidStudentException {
 
@@ -73,7 +70,6 @@ public class University {
                 }
             }
         }
-
         return marksSum/marksCount;
     }
 
@@ -136,6 +132,9 @@ public class University {
                 }
                 }
             }
+        } if (marksCount == 0) {
+            throw new InvalidSubjectException(subjectName + " isn't valid subject for students in this group: " + groupNumber
+                                                + " and faculty: " + facultyNumber + ". Use another subject, please!");
         }
         return marksSum/marksCount;
     }

@@ -16,15 +16,7 @@ public class Faculty {
         return numberOfFaculty;
     }
 
-    public void setNumberOfFaculty(int numberOfFaculty) {
-        this.numberOfFaculty = numberOfFaculty;
-    }
-
     public List<Group> getGroups() {
         return groups;
-    }
-
-    public void setGroups(List<Group> groups) {
-        this.groups = groups;
     }
 }

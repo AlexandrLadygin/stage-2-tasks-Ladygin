@@ -15,15 +15,7 @@ public class Subject {
         return subject;
     }
 
-    public void setSubject(SubjectEnums subject) {
-        this.subject = subject;
-    }
-
     public List<Mark> getMarks() {
         return marks;
-    }
-
-    public void setMarks(List<Mark> marks) {
-        this.marks = marks;
     }
 }

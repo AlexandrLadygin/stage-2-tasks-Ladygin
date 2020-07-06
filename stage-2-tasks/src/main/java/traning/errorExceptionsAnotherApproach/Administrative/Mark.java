@@ -12,14 +12,4 @@ public class Mark {
         return markValue;
     }
 
-    public void setMarkValue(int markValue) {
-        this.markValue = markValue;
-    }
-
-    @Override
-    public String toString() {
-        return "Mark{" +
-                "markValue=" + markValue +
-                '}';
-    }
 }

@@ -16,15 +16,8 @@ public class Group {
         return numberOfGroup;
     }
 
-    public void setNumberOfGroup(int numberOfGroup) {
-        this.numberOfGroup = numberOfGroup;
-    }
-
     public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
 }

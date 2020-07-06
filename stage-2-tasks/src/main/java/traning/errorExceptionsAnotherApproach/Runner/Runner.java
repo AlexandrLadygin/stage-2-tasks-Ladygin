@@ -27,7 +27,7 @@ public class Runner {
 
         // Alex marks
         ArrayList<Mark> marks_1_Alex =  new ArrayList<>();
-        marks_1_Alex.add(new Mark(10));
+        marks_1_Alex.add(new Mark(5));
         marks_1_Alex.add(new Mark(5));
         marks_1_Alex.add(new Mark(5));
 
@@ -244,7 +244,7 @@ public class Runner {
 
         double result2 = 0;
         try {
-            result2 = university.getAverageByStudentId(5);
+            result2 = university.getAverageByStudentId(8);
         } catch (InvalidMarkException | InvalidStudentException e) {
             e.printStackTrace();
         }
@@ -252,6 +252,7 @@ public class Runner {
 
         double result3 = 0;
         try {
+
             result3 = university.getAverageBySubjectName("BIOLOGY");
         } catch (InvalidMarkException e) {
             e.printStackTrace();
@@ -260,7 +261,7 @@ public class Runner {
 
         double result4 = 0;
         try {
-            result4 = university.getAverageBySubjectNameByGroupNumberByFacultyNumber("CHEMICAL", 1, 1);
+            result4 = university.getAverageBySubjectNameByGroupNumberByFacultyNumber("BIOLOGY", 1, 1);
         } catch (InvalidMarkException | InvalidFacultyException | InvalidGroupException | InvalidSubjectException e) {
             e.printStackTrace();
         }
